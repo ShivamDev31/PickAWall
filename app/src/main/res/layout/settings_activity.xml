@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.droidacid.pickawall.SettingsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/lbl_google_username"
+        android:textColor="@color/settings_label"
+        android:textSize="16sp" />
+
+    <!--android:background="@drawable/ROUNDCORNERS"-->
+    <EditText
+        android:id="@+id/etGoogleUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/lbl_no_grid_columns"
+        android:textColor="@color/settings_label"
+        android:textSize="16dp" />
+
+    <!--android:background="@drawable/ROUNDCORNERS"-->
+    <EditText
+        android:id="@+id/etNoOfCols"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/lbl_gallery_name"
+        android:textColor="@color/settings_label"
+        android:textSize="16sp" />
+
+    <!--android:background="@drawable/ROUNDCORNERS"-->
+    <EditText
+        android:id="@+id/etGalleryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <!--android:background="@drawable/ROUNDCORNERS"-->
+        <Button
+            android:id="@+id/bSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:onClick="saveSettings"
+            android:padding="10dp"
+            android:text="@string/lbl_btn_save"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bDefault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="resetSettings"
+            android:padding="10dp"
+            android:text="@string/lbl_reset_settings"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
